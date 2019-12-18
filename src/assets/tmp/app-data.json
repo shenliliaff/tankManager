@@ -1,0 +1,83 @@
+{
+  "app": {
+    "name": "AdminSite",
+    "description": "The management platform of tanks"
+  },
+  "user": {
+    "name": "Admin",
+    "avatar": "./assets/tmp/img/avatar.jpg",
+    "email": "cipchk@qq.com"
+  },
+  "menu": [
+    {
+      "text": "Management",
+      "i18n": "menu.management",
+      "group": true,
+      "hideInBreadcrumb": true,
+      "children": [
+        {
+          "text": "Orders",
+          "i18n": "menu.orders",
+          "icon": "anticon-appstore",
+          "children": [
+            {
+              "text": "Orders List",
+              "link": "/pro/list/basic-list",
+              "i18n": "menu.list.orderslist"
+            },
+            {
+              "text": "Orders search",
+              "i18n": "menu.list.orderssearch",
+              "children": [
+                {
+                  "link": "/pro/list/articles",
+                  "i18n": "menu.list.searchlist.articles"
+                },
+                {
+                  "link": "/pro/list/projects",
+                  "i18n": "menu.list.searchlist.projects",
+                  "shortcut": true
+                },
+                {
+                  "link": "/pro/list/applications",
+                  "i18n": "menu.list.searchlist.applications"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "FAQ",
+          "i18n": "menu.FAQ",
+          "icon": "anticon-appstore",
+          "children": [
+            {
+              "text": "FAQ List",
+              "link": "/pro/list/basic-list",
+              "i18n": "menu.list.FAQlist"
+            },
+            {
+              "text": "FAQ Search",
+              "i18n": "menu.list.FAQsearch",
+              "children": [
+                {
+                  "link": "/pro/list/articles",
+                  "i18n": "menu.list.searchlist.articles"
+                },
+                {
+                  "link": "/pro/list/projects",
+                  "i18n": "menu.list.searchlist.projects",
+                  "shortcut": true
+                },
+                {
+                  "link": "/pro/list/applications",
+                  "i18n": "menu.list.searchlist.applications"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
