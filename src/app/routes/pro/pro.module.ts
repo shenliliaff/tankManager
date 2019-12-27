@@ -11,6 +11,7 @@ import { Step3Component } from './form/step-form/step3.component';
 import { AdvancedFormComponent } from './form/advanced-form/advanced-form.component';
 import { ProTableListComponent } from './list/table-list/table-list.component';
 import { ProBasicListComponent } from './list/basic-list/basic-list.component';
+import { FAQListComponent } from './list/FAQ-list/FAQ-list.component';
 import { ProCardListComponent } from './list/card-list/card-list.component';
 import { ProListLayoutComponent } from './list/list/list.component';
 import { ProListArticlesComponent } from './list/articles/articles.component';
@@ -30,6 +31,7 @@ import { ProAccountSettingsSecurityComponent } from './account/settings/security
 import { ProAccountSettingsBindingComponent } from './account/settings/binding/binding.component';
 import { ProAccountSettingsNotificationComponent } from './account/settings/notification/notification.component';
 import { ProBasicListEditComponent } from './list/basic-list/edit/edit.component';
+import { FAQListEditComponent } from './list/FAQ-list/edit/edit.component';
 
 const COMPONENTS = [
   BasicFormComponent,
@@ -37,6 +39,7 @@ const COMPONENTS = [
   AdvancedFormComponent,
   ProTableListComponent,
   ProBasicListComponent,
+  FAQListComponent,
   ProCardListComponent,
   ProListLayoutComponent,
   ProListArticlesComponent,
@@ -57,7 +60,13 @@ const COMPONENTS = [
   ProAccountSettingsNotificationComponent,
 ];
 
-const COMPONENTS_NOROUNT = [Step1Component, Step2Component, Step3Component, ProBasicListEditComponent];
+const COMPONENTS_NOROUNT = [
+  Step1Component,
+  Step2Component,
+  Step3Component,
+  ProBasicListEditComponent,
+  FAQListEditComponent,
+];
 
 @NgModule({
   imports: [SharedModule, ProRoutingModule],

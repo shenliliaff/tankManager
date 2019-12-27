@@ -6,6 +6,7 @@ import { AdvancedFormComponent } from './form/advanced-form/advanced-form.compon
 import { BasicFormComponent } from './form/basic-form/basic-form.component';
 import { ProTableListComponent } from './list/table-list/table-list.component';
 import { ProBasicListComponent } from './list/basic-list/basic-list.component';
+import { FAQListComponent } from './list/FAQ-list/FAQ-list.component';
 import { ProCardListComponent } from './list/card-list/card-list.component';
 import { ProListArticlesComponent } from './list/articles/articles.component';
 import { ProListProjectsComponent } from './list/projects/projects.component';
@@ -39,6 +40,7 @@ const routes: Routes = [
     children: [
       { path: 'table-list', component: ProTableListComponent },
       { path: 'basic-list', component: ProBasicListComponent },
+      { path: 'FAQ-list', component: FAQListComponent },
       { path: 'card-list', component: ProCardListComponent },
       {
         path: '',
